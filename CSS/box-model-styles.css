@@ -1,0 +1,63 @@
+h1{
+    border: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+#first{
+    font-size: 4em;
+    padding:10px 20px;
+    background-image:linear-gradient(to bottom right ,blue,white,blue);
+    border:10px solid black;
+}
+#second{
+    font-size: 4em;
+    padding:10px 20px;
+    background-image:linear-gradient(to bottom right ,blue,white,blue);
+    border:10px solid black;
+}
+#third{
+    margin-right: 50%;
+    border:10px solid black;
+}
+#p1{
+    margin-right: 50%;
+border:2px solid black;
+padding-left:52%;
+}
+#outer-box{
+    border: 1px solid black;
+    margin:25%;
+}
+#inner-box{
+    border: 1px solid black;
+    padding:25%;
+}
+
+#outer-box2{
+    border:1px solid black;
+    margin:20%;
+}
+#middle-box{
+    border:1px solid black;
+    margin:20%;
+}
+#inner-box2{
+    border:1px solid black;
+    margin:20%;
+}
+#box-title2{
+    text-align: center;
+}
+
+/* #sample{
+    border:1px solid black; 
+} */
+
+#box-title{
+    text-align: center;
+}
+
+
+
+
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #greeting {
+        border: none;
+        background-color: aqua;
+    }
+
+    footer h5 {
+        border: none;
+    }
+
+    header h2 {
+        background-color: cornflowerblue;
+    }
+
+    /* h2 {
+        background-color: aqua;
+    } */
+
+    h3 {
+        border: none;
+    }
+
+    div>p {
+        color: green;
+    }
+
+    #sibling1 {
+        color: red;
+    }
+
+    /* div >p{
+        color:aqua;
+    } */
+     /* h2 + p{
+        background-color:aqua;
+     } */
+          div> h4{
+        background-color:red;
+     }
+</style>
+
+<body>
+    <header>
+        <h1>CSS Start</h1>
+        <div>
+            <h2>Selectors <br>
+                <h3>CSS have more than 10 type of selectors</h3>
+            </h2>
+        </div>
+    </header>
+    <h2 id="greeting">Welcome</h2>
+    <div id="parent1">
+        CSS Siblings
+        <p id="sibling1">
+            Sibling1
+        <p id="sibling1">Child tag of Sibling tag</p>
+        <p id="sibling2">Child tag of Sibling tag</p>
+        </p>
+
+        <h4>Sibling2</h4>
+        <h5>Sibling3</h5>
+    </div>
+    <div>
+        Parent Tag
+        <p>Child Tag</p>
+        <p>Child2 Tag</p>
+    </div>
+    <div class="parent">
+        <p>Direct child paragraph</p>
+        <div>
+            <p>Nested paragraph (grandchild)</p>
+        </div>
+    </div>
+    <div>
+  <h2>Heading</h2>
+  <p>First paragraph after h2</p>
+  <p>Second paragraph after h2</p>
+  <!-- <h3></h3>
+  <span>Not a paragraph</span> -->
+  <h4>Third paragraph after h2</h4>
+</div>
+
+
+    <footer>
+        <h5>copyrights reserved</h5>
+    </footer>
+</body>
+
+</html>

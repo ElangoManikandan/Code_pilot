@@ -1,0 +1,9 @@
+h2{
+    text-align: center;
+    word-spacing: 2px;
+    letter-spacing: 5px;
+}
+span{
+    color: rgba(red, green, blue, alpha);
+    text-decoration: underline;
+}

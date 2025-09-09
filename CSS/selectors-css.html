@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors Demo</title>
+  <style>
+    /* 1. Universal Selector */
+    * {
+      font-family: Arial, sans-serif;
+    }
+
+    /* 2. Type Selector */
+    h1 {
+      color: darkblue;
+    }
+
+    /* 3. Class Selector */
+    .intro {
+      color: green;
+    }
+
+    /* 4. ID Selector */
+    #special {
+      color: crimson;
+      font-weight: bold;
+    }
+
+    /* 5. Group Selector */
+    h2, h3, p {
+      margin: 5px;
+    }
+
+    /* 6. Descendant Selector */
+    div p {
+      color: brown;
+    }
+
+    /* 7. Child Selector */
+    div > p {
+      background: lightyellow;
+    }
+
+    /* 8. Adjacent Sibling Selector */
+    h2 + p {
+      color: purple;
+    }
+
+    /* 9. General Sibling Selector */
+    h2 ~ p {
+      font-style: italic;
+    }
+
+    /* 10. Attribute Selectors */
+    a[target] {
+      color: red;
+    }
+    a[target="_blank"] {
+      text-decoration: underline;
+    }
+    input[type="text"] {
+      border: 2px solid black;
+    }
+    input[type^="te"] {
+      background: lightblue;
+    }
+    input[type$="ord"] {
+      color: green;
+    }
+    input[type*="na"] {
+      font-style: italic;
+    }
+
+    /* 11. Pseudo-classes */
+    a:link { color: blue; }
+    a:visited { color: darkred; }
+    a:hover { color: orange; }
+    a:active { color: pink; }
+    input:focus { border: 2px solid blue; }
+
+    p:first-child { color: teal; }
+    p:last-child { color: darkorange; }
+    p:nth-child(2) { color: navy; }
+    p:nth-of-type(3) { background: #ddd; }
+    p:only-child { border: 1px dashed red; }
+
+    input:checked { outline: 2px solid green; }
+    input:disabled { background: #eee; }
+
+    /* 12. Pseudo-elements */
+    p::first-line {
+      font-weight: bold;
+    }
+    p::first-letter {
+      font-size: 30px;
+      color: red;
+    }
+    /* p::before {
+      content: "👉 ";
+    } */
+    p::after {
+      content: " ✅";
+    } 
+    ::selection {
+      background: yellow;
+    }
+
+    /* 14. Negation */
+    p:not(.intro) {
+      font-size: 14px;
+    }
+
+    /* 15. CSS4 Selectors */
+    div:has(> img) {
+      border: 2px solid green;
+      padding: 5px;
+    }
+    :is(h1, h2, h3) {
+      text-decoration: underline;
+    }
+    :where(article p) {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Type Selector (h1), Group Selector (margin), Universal Selector (font) -->
+  <h1>CSS Selectors Demo</h1>
+
+  <!-- Class Selector (.intro) + Negation (p:not) -->
+  <p class="intro">This is an intro paragraph (class selector) <br>It will be not bolder</p>
+
+  <!-- ID Selector (#special) -->
+  <p id="special">This is a special paragraph with an ID.</p>
+
+  <!-- Descendant Selector (div p) + Child Selector (div > p) -->
+  <div>
+    <p>Paragraph inside a div (descendant + child).</p>
+    <section>
+      <!-- This one is descendant only (not direct child) -->
+      <p>Paragraph inside section inside div.</p>
+    </section>
+  </div>
+
+  <!-- Adjacent sibling (h2 + p) and general sibling (h2 ~ p) -->
+  <h2>Heading 2</h2>
+  <p>Paragraph right after h2 (adjacent sibling).</p>
+  <p>Another paragraph after h2 (general sibling).</p>
+
+  <!-- is(h3) selector applies underline -->
+  <h3>Heading 3</h3>
+
+  <!-- Structural pseudo-classes (first-child, nth-child, last-child) -->
+  <article>
+    <p>First para inside article (first-child).</p>
+    <p>Second para inside article (nth-child).</p>
+    <p>Third para inside article (nth-of-type + last-child).</p>
+  </article>
+
+  <!-- Attribute selectors and form pseudo-classes -->
+  <form>
+    <input type="text" placeholder="Text input (type=text)"><br>
+    <input type="password" placeholder="Password (type=password)"><br>
+    <input type="checkbox" checked> Check me (checked)<br>
+    <input type="text" disabled value="Disabled input (disabled)">
+  </form>
+
+  <!-- Attribute selectors for links + pseudo-classes (link, visited, hover, active) -->
+  <a href="https://example.com" target="_blank">External Link (target="_blank")</a><br>
+  <a href="https://example.com">Normal Link (no target)</a>
+
+  <!-- CSS4 :has selector applies border when img is inside div -->
+  <div>
+    <img src="https://via.placeholder.com/100" alt="demo image">
+  </div>
+
+</body>
+</html>

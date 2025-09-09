@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #flex-container{
+        display:flex;
+        flex-wrap:wrap;
+        /* border: 1px solid black; */
+        justify-content: space-evenly;
+        
+    }
+    .box{
+       height:300px;
+        width:300px;
+        margin:20px;
+        /* border:1px solid black; */
+        
+    }
+    .one,.five{
+        background-color: rgb(66, 120, 236);
+    }
+    .two,.six{
+        background-color:darkgoldenrod;
+    }
+    .three,.seven{
+    background-color: crimson;
+    }
+    .four,.eight{
+        background-color: gray;
+    }
+    .heading{
+        margin:20px 0px 10px 20px; 
+        font-weight: bolder;
+        font-size: 30px;
+    }
+    .head-two,.head-six,.head-four,.head-eight{
+        color:black;
+    }
+
+    p{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 21px;
+        color: white;
+        margin:10px 10px 10px 20px;
+        margin-top: 20px;
+    }
+    #p2,#p4,#p6,#p8{
+        color: black;
+    }
+    h1{
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+</style>
+<body>
+    <h1>Flex Box Task By Elango</h1>
+    <div id="flex-container">
+        <div class="box one"><p class="heading head-one">Bono</p> <p id="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati id sapiente, quidem,incidunt omnis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nihil in magnam? Sint, iusto hic</p></div>
+        <div class="box two"><p class="heading head-two">Edge</p><p id="p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati id sapiente, quidem,incidunt omnis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nihil in magnam? Sint, iusto hic</p></div>
+        <div class="box three"><p class="heading head-three">Adam</p><p id="p3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati id sapiente, quidem,incidunt omnis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nihil in magnam? Sint, iusto hic</p></div>
+        <div class="box four"><p class="heading head-four">Larry</p><p id="p4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati id sapiente, quidem,incidunt omnis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nihil in magnam? Sint, iusto hic</p></div>
+        <div class="box five"><p class="heading head-five">Bono</p><p id="p5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati id sapiente, quidem,incidunt omnis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nihil in magnam? Sint, iusto hic</p></div>
+        <div class="box six"><p class="heading head-six">Edge</p><p id="p6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati id sapiente, quidem,incidunt omnis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nihil in magnam? Sint, iusto hic</p></div>
+        <div class="box seven"><p class="heading head-seven">Adam</p><p id="p7">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati id sapiente, quidem,incidunt omnis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nihil in magnam? Sint, iusto hic</p></div>
+        <div class="box eight"><p class="heading head-eight">Larry</p><p id="p8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati id sapiente, quidem,incidunt omnis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nihil in magnam? Sint, iusto hic</p></div>
+    </div>
+</body>
+</html>

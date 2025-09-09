@@ -1,0 +1,5 @@
+BORDER
+    Border Width:(in (px,cm,in));
+    Border  Style:(solid,dashed,dotted,groove,double,etc)
+    Border Color:(all colors)
+    Border-Radius:How much curve needed in Corner

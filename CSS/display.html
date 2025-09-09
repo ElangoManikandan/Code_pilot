@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #h1-1{
+        text-align: center;
+        display: block;
+        border:1px solid blue;
+    }
+    #a1{
+        display: inline-block;
+        border:1px solid blue;
+        padding: 40px;
+    }
+    /* #a1{
+        display: none;
+    } */
+
+    #a2{
+        display: inline-block;
+        padding:40px;
+        border:1px solid blue;
+    }
+    #a2:hover{
+        color:green;
+    }
+    #heading1{
+        text-align: center;
+    }
+    #div1{
+    height: 100px;
+    border:1px solid blue;
+    text-align: center;
+    }
+    #container{
+        margin:20px;
+        padding: 5px;
+        border:5px solid blue;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #flex-container{
+        margin:50px 0px;
+        /* padding: 100px; */
+        border:1px solid black;
+        display: flex;
+        /* flex-wrap: wrap; */
+        /* flex-direction: row-reverse; */
+        /* justify-content: center;*/
+        /* align-items: stretch;*/
+        /* height: 300px;*/
+    }
+    .box{
+        padding:50px;
+        border:1px solid black;
+        height: 100px;
+        background-color: darkcyan;
+    }
+    .one{
+         /* padding:50px; */
+         background-color: chocolate;
+         /* flex-grow: 1; */
+    }
+    /* .two{
+        flex-grow: 2;
+    } */
+
+</style>
+<body>
+    <h1 id="h1-1">Hello</h1>
+    <h2 id="h1-2">Devs!</h2>
+    <a href="" id="a1">Click me</a>
+    <a href="" id="a2">Hover me</a>
+    <div id="div1"> 
+        <h1>Div Box</h1>
+    </div>
+    <div id="container">
+        <h1 id="heading1">head1</h1>
+        <button id="btn1">Button</button>
+        <input type="text" placeholder="write text here" id="input1">
+        <p id="p1">Paragraph</p>
+    </div>
+    <div id="flex-container">
+        <div class="box one">Item1</div>
+        <div class="box two">Item2</div>  
+        <div class="box">Item3</div>
+        <div class="box">Item4</div>
+        <div class="box">Item5</div>
+    </div>
+</body>
+</html>

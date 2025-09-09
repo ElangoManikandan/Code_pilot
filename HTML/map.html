@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="/bg.jpg" alt="image for mapping" usemap="#bg-map">
+    <map name="bg-map" >
+        <area shape="poly" coords="14,487,26,617,166,590,147,467" href="/HTML/basics.html" alt="">
+        <area shape="poly" coords="329,329,310,399,302,485,318,544,325,581,387,585,401,574,434,563,486,575,516,555,561,546,600,547,646,540,686,530,735,532,777,531,819,521,862,512,888,504,927,500,963,498,995,492,1020,474,1014,440,1005,405,989,374,968,361,941,343,934,303,882,299,857,284,832,264,781,254,735,246,592,266,459,298" href="/HTML/frame_tutorial/login.html" alt="" target="_self" >
+    </map>
+ <img src="/bg.jpg" alt="image for mapping" usemap="#example-map">
+    <map name="example-map">
+    <area shape="rect" coords="0,0,100,100" href="page1.html" target="_self" alt="Self">
+    <area shape="rect" coords="110,0,210,100" href="page2.html" target="_blank" alt="Blank">
+    <area shape="rect" coords="220,0,320,100" href="page3.html" target="_parent" alt="Parent">
+    <area shape="rect" coords="330,0,430,100" href="page4.html" target="_top" alt="Top">
+    <area shape="rect" coords="440,0,540,100" href="page5.html" target="myFrame" alt="Named Frame">
+</map>
+
+<!-- Named iframe example -->
+<iframe name="myFrame" width="800" height="600"></iframe>
+
+
+    <!-- <script>
+    function resizeMap() {
+        const img = document.querySelector('img[usemap]');
+        const map = document.querySelector('map[name="' + img.useMap.slice(1) + '"]');
+        const areas = map.querySelectorAll('area');
+        const originalWidth = img.naturalWidth;
+        const originalHeight = img.naturalHeight;
+
+        const scaleX = img.width / originalWidth;
+        const scaleY = img.height / originalHeight;
+
+        areas.forEach(area => {
+            const originalCoords = area.dataset.originalCoords.split(',').map(Number);
+            const newCoords = originalCoords.map((coord, index) =>
+                index % 2 === 0 ? Math.round(coord * scaleX) : Math.round(coord * scaleY)
+            );
+            area.coords = newCoords.join(',');
+        });
+    }
+
+    window.addEventListener('load', () => {
+        const areas = document.querySelectorAll('area');
+        areas.forEach(area => {
+            area.dataset.originalCoords = area.coords;
+        });
+        resizeMap();
+    });
+
+    window.addEventListener('resize', resizeMap);
+</script> -->
+
+</body>
+</html>

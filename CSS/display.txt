@@ -1,0 +1,53 @@
+Block
+    takes full width
+    padding,width can be applied
+inline
+    takes width of content
+    cannot apply padding 
+
+inline-Block
+    takes content width
+    we can add padding,margin
+
+
+FLEX
+    turns container->Flex container
+    children (flex items or flex children)follow flexbox rules(row/column,justify,align)
+
+FLEX-DIRECTION
+    row
+    row-reverse
+    column
+    column-reverse
+
+justify-content
+    - aligns items on MAIN axis
+    properties:
+    flex-start
+    flex-end
+    center
+    space-between
+    space-around
+    space-evenly
+
+align-items
+    -aligns items on CROSS axis
+    properties:
+    stretch
+    flex-start
+    flex-end
+    center
+    baseline
+
+flex-wrap
+    nowrap(default)
+    wrap
+    wrap-reverse
+
+flex-properties
+    flex-grow
+    flex-shrink
+    flex-basis
+    
+
+
