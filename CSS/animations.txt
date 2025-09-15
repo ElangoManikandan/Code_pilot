@@ -1,0 +1,14 @@
+@keyframes animation_name{
+    0% {
+        transform:translate(0.10px)
+    }
+    50%{
+        transform:translate(0.30px)
+    }
+    100%{
+        transform:translate(0.10px)
+    }
+}
+.box{
+    animation: animation_name duration timing_function delay iteration_count direction
+}

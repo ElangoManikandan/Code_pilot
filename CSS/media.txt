@@ -1,0 +1,7 @@
+Media Queries
+* create responsible websites responsive to width
+@media media-type and(condition){
+
+    /*CSS rules*/
+}
+media type is optional

@@ -1,0 +1,32 @@
+Here are the 4 main components (types) of CSS transitions:
+
+transition-property
+    Specifies the CSS property to which the transition is applied 
+    (e.g., background-color, width). 
+    Use all to apply to all changeable properties.
+
+transition-duration
+    Defines how long the transition takes to complete 
+    (e.g., 0.5s, 1s). 
+
+transition-timing-function
+    Describes how the intermediate values 
+    of the transition are calculated 
+    (e.g., ease, linear).
+
+transition-delay
+    Sets a delay before the transition starts (e.g., 0.2s).      
+
+Use transition to animate CSS property changes smoothly.
+
+Main properties:
+
+    transition-property
+
+    transition-duration
+
+    transition-timing-function
+
+    transition-delay
+
+using shorthand: transition: all 0.5s ease-in-out 0s;

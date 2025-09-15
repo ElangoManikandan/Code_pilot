@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .btn{
+        padding:30px 50px;
+        color:white;
+        margin:20px 10px 5px 40px;
+        border-radius:30%;
+        background-color:rgb(26, 104, 213);
+        transition:all .2s linear ;
+    }
+    .btn:hover{
+
+        
+        transform:scale(1.1);
+        background-color:rgb(7, 150, 43);
+    }
+    .ball{
+        width:50px;
+        height:50px;
+        margin:10px 50px;
+        border-radius: 100%;
+        background-color: red;
+        animation:bounce 2s ease-in-out 0s infinite;
+    }
+    @keyframes bounce {
+        0%{
+            transform:translate(0px,0px)
+        }
+        50%{
+            transform: translate(0px,100px);
+        }
+        100%{
+            transform: translate(0px,0px);
+        }
+    }
+
+</style>
+<body>
+    <h1>CSS transition and Animation Examples-Elango </h1>
+    <h2>1.Button with CSS Transition</h2>
+    <button class="btn">Click me</button>
+    <h2>2.Animated Bouncing Ball</h2>
+    <div class="ball"></div>
+</body>
+</html>

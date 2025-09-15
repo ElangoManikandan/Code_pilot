@@ -1,0 +1,6 @@
+CSS Variable
+ --used to store and Reuse Colors,Pixel sizes,fonts etc..
+Style
+ tag{
+    --name:value;
+ }

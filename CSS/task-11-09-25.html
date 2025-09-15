@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body 
+    {
+        background-image: url("bg1.png");
+        background-size: cover;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 200vh;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        margin-top:20px;
+    }
+
+    .navbar-left {
+        display: flex;
+        margin-left: 90px;
+        width: 40%;
+        /* padding: 20px;    */
+        cursor: pointer;
+    }
+
+    .navbar-right {
+        margin-right: 10px;
+        display: flex;
+        width: 70%;
+        justify-content: end;
+        padding-right: 40px;
+    }
+
+    /* .navbar-right:hover{
+        color: orangered;
+    } */
+
+    .navbar-list {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        /* align-content: center;  */
+
+    }
+    #letter-e{
+        width:50px;
+        height:50px;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    #get-started {
+        border: 1px solid white;
+        border-radius: 15px;
+        padding: 15px;
+        margin-top: 0px;
+        /* margin-left: -20px; */
+        transition: all .5s;
+        color: white;
+    }
+
+    #get-started:hover {
+        background-color: rgb(132, 160, 237);
+        color: black;
+        border: none;
+        cursor: pointer;
+
+    }
+
+    #user-icon-image {
+        width: 30px;
+        height: 30px;
+        padding-right: 10px;
+        padding-top: 10px;
+
+    }
+
+    .navbar-listlogin {
+        padding-left: 0;
+        padding-right: 0;
+        color: orangered;
+    }
+
+    .navbar-login {
+        display: flex;
+        color: orangered;
+        cursor: pointer;
+    }
+
+    #Solutions:hover {
+        color: orangered;
+        cursor: pointer;
+    }
+
+    #Vision:hover {
+        color: orangered;
+        cursor: pointer;
+    }
+
+    #Program:hover {
+        color: orangered;
+        cursor: pointer;
+    }
+
+    #Blog:hover {
+        color: orangered;
+        cursor: pointer;
+    }
+
+    #fixed-box-image {
+        position:fixed;
+        width: 30px;
+        height: 30px;
+        padding: 20px;
+        margin-top:20px;
+        margin-left: 1370px;
+        background-color: orangered;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    /* #fixed-box-image:hover{
+        background-color: black;
+        mask-image: url("chatting2.png");
+
+    } */
+
+    .heading {
+        font-size: 80px;
+        margin: 100px 0px 40px 100px;
+        width: 60%;
+        font-family: "Bitcount Prop Single", system-ui;
+        animation: fade-in .7s linear;
+    }
+
+    .content {
+        font-size: 30px;
+        margin: 20px 0px 50px 100px;
+        width: 60%;
+        font-family:"Bitcount Prop Single", system-ui;
+        transition: all 1s;
+        animation: fade-in .8s ease-in;
+    }
+
+    .learn-more {
+        padding: 25px 50px;
+        display: inline;
+        /* color:black; */
+        background-color: orangered;
+        border-radius: 25px;
+        animation: fade-in 1s linear;
+        margin-left: 100px;
+        font-size: 20px;
+        transition: all .5s;
+        
+    }
+
+    .learn-more:hover {
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        cursor: pointer;
+    }
+    .learn-more-div{
+        animation: fade-in .9s ease-in;
+    }
+    @keyframes fade-in {
+        0%{transform: translate(-300px,0px);opacity: 0;}
+        100%{transform: translate(0px,0px);opacity: 1;}    
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="navbar-left">
+                <img src="letter-e.png" alt="" id="letter-e">
+               <p class="text">ELANGO.ai</p> 
+            </div>
+            <div class="navbar-right">
+                <div class="navbar-list">
+                    <p id="Solutions">Solutions</p>
+                    <p id="Vision">Vision</p>
+                    <p id="Program">Program</p>
+                    <p id="Blog">Blog</p>
+                    <div class="navbar-login"><img src="icons.png" id="user-icon-image" alt="">
+                        <p id="navbar-list-login">Login
+                    </div>
+                    <p id="get-started">Get Started</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="heading">The New Standard <br>in Data Analysis</div>
+    <div class="content">Use Data to Get a 360-Degree <br> View of Your Business</div>
+    <div class="learn-more-div"><div class="learn-more">Learn More</div></div>
+    <img src="chatting.png" alt="" id="fixed-box-image">
+
+</body>
+
+</html>

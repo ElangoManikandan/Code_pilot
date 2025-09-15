@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    .greeting{
+        text-align: center;
+        margin: 200px;
+        padding:100px;
+        border:1px solid black;
+    }
+    .greeting:hover{
+        background-color: green;
+        transition:all 2s;
+        transition-timing-function: ease-in;
+        transform:scale(0.5) rotate(45deg);
+    }
+    .greeting2{
+        text-align: center;
+        margin: 200px;
+        padding:100px;
+        border:1px solid black;
+        animation: go-up 2s linear infinite;
+    }
+    .greeting2:hover{
+       
+     background-color: green;
+
+    }
+    @keyframes go-up {
+        0%{transform:scale(1) rotate(0deg);}
+        50%{transform:scale(.5) rotate(45deg)}
+        75%{transform:scale(.8) rotate(15deg)}
+        100%{transform:scale(1) rotate(0deg)}
+    }
+    
+</style>
+<body>
+    <div class="greeting">Welcome</div>
+    <div class="greeting2">Welcome</div>
+</body>
+</html>

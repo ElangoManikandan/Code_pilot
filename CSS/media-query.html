@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        text-align: center;
+        border:1px solid black;   
+    }
+    .box{
+        text-align: center;
+        padding: 50px;
+        border:1px solid green;
+        background-color: blue;
+        color: white;
+    }
+    .container-box{
+        margin:20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:10px;
+    }
+    .box{
+          flex-wrap: wrap;
+    }
+    @media (min-width:768px) {
+        .container{
+            color: blue;
+        }
+    }
+     @media (max-width:768px)  {
+        .container{
+            color: red;
+        }
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+             background-color:red;
+             color: white;
+        }
+    }
+    @media (max-width:450px) {
+     .container{
+            color:green;
+        }
+         .container-box{
+            display:flex;
+            flex-wrap: wrap;
+         } 
+        .box{
+            padding: 20px;
+             background-color: green;
+              color:white;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Media Query Rensponsive Box</h1>
+        <div class="container-box">
+        <div class="box"><p>Sample text1</p></div>
+        <div class="box"><p>Sample text2</p></div>
+        <div class="box"><p>Sample text3</p></div>
+        <div class="box"><p>Sample text4</p></div>
+        <div class="box"><p>Sample text5</p></div>
+        </div>
+    </div>
+</body>
+</html>
