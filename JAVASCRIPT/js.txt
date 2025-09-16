@@ -1,0 +1,49 @@
+JAVASCRIPT
+--It is a programming language
+--Makes interactivity in web page
+
+Connection Methods
+--Inline 
+
+<h1 onlick="alert("You clicked H1 tag")"></h1>
+
+--Internal
+
+<script>
+alert('Hii')
+</script>
+
+--External
+
+Separate js file
+alert("Hello js")
+in HTML
+<script src="index.js"></script>
+
+Variables
+--Var
+--Let
+--Const
+
+Scope
+--Global Scope
+--Functional Scope
+--Block scope
+
+Hoisting
+--Variables and functions declaration are moved to the top of the scope during compilation phase
+
+Let
+--Block scoped
+--Cannot redeclare 
+--can reassign
+--Cannot be hoisted
+
+Const
+--Block scoped
+--Cannot be redeclare and reassign
+
+Var
+--Functional Scope
+--Can redeclare and reassign
+--Hoisted
