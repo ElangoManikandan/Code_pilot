@@ -42,8 +42,47 @@ Let
 Const
 --Block scoped
 --Cannot be redeclare and reassign
+--Cannot be hoisted
 
 Var
 --Functional Scope
 --Can redeclare and reassign
 --Hoisted
+
+
+
+DATA TYPES
+--For Different Problems..we use Different Data types
+--Two
+----Primitive
+----Non Primitive
+
+PRIMIITIVE
+    --Number (20,50,3.2)
+    --String ("Hello Akaza")
+    --Boolean  (true,false)
+    --Undefined (Variable declared but no value yet)
+    --Null (Intentional Nothing)
+    --Symbol(unique value(Used Rarely))
+    --BigInt
+
+
+
+NON PRIMITIVE data types
+    --Object {name:"Elan",age:25}
+    --Array-[1,2,3]
+    --Function ->function greet(){...}
+
+    TYPES OF OPERATORS
+    -Arithmetic OPERATORS(+-*/%==)
+
+    let a=10,b=3;
+    console.log(a+b)
+    console.log(a-b)
+    console.log(a*b)
+    console.log(a/b)
+    console.log(a%b)
+    console.log(a**b)
+    -Assignment OPERATORS
+
+    -Logical OPERATORS
