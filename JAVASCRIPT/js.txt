@@ -86,3 +86,10 @@ NON PRIMITIVE data types
     -Assignment OPERATORS
 
     -Logical OPERATORS
+
+Loops
+--For 
+--While
+--Do-While
+--For in(Returns index of the elements)
+--For of(Returns index of the elements)
