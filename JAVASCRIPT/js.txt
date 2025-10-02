@@ -158,3 +158,8 @@ functions
         pop()-Removes elements in the last
         unswift()-add element in first
         swift()-delete element in the last
+
+        indexOf()-FInd index of the particular value
+        if value not present -Returns -1
+        includes()-Checks Data present in the array
+        if not present in array- returns false

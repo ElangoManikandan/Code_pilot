@@ -126,4 +126,7 @@ const drinks=['RedBull','7up','Mountain dew','Pepsi']
 drinks.push('Tilo');
 drinks.shift();
 drinks.unshift('Sprite');
+drinks.includes('sprite');
 console.log(drinks)
+drinks.includes('Sprite');
+console.log(drinks.indexOf('sprite'));
