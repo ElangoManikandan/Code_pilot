@@ -114,3 +114,16 @@ function funct(){
 }
 const u=funct();
 console.log(u(3,2));
+
+//ARRAYs
+
+const foods =new Array('Idly','Dosa','Briyani','Chicken Rice');
+console.log(foods)
+console.log(foods.slice(1,3))
+
+const drinks=['RedBull','7up','Mountain dew','Pepsi']
+// console.log(drinks.slice(-4,-2))
+drinks.push('Tilo');
+drinks.shift();
+drinks.unshift('Sprite');
+console.log(drinks)

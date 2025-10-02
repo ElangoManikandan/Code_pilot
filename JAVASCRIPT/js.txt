@@ -143,3 +143,18 @@ functions
             }
     Higher Order Function
             
+
+            Array
+                Collection of Data
+                Using Square Brackets
+                index Starting feom 0
+                can store multiple data types
+                mutable
+                have many builtin functions to modify
+        WE CAN CREATE ARRAY USING CONSTRUCTORS
+        new Array();
+
+        push()-Add elements to the last
+        pop()-Removes elements in the last
+        unswift()-add element in first
+        swift()-delete element in the last
