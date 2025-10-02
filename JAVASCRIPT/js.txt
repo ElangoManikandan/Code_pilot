@@ -93,3 +93,53 @@ Loops
 --Do-While
 --For in(Returns index of the elements)
 --For of(Returns index of the elements)
+
+Control Statements
+----Conditional Statements
+----Iterative Statements
+--Break
+--Continue
+--Return
+
+Conditional Statements
+--If
+--If-else
+--Switch
+--Ternary OPERATORS
+
+Iterative Statements
+--For
+--While
+--Do-While
+
+functions
+    It is a Block of code that can be reused whenever we want
+
+    Syntax:
+    function function_name(parameters){
+        Statements;
+    }
+    function_name(arguments);
+
+    TYPES OF functions
+
+    Regular                 --Normal Function
+    Anonymous function      --Without name
+    Arrow                   --Single Line
+    CallBack                --Callback Another Function
+    Higher Order Function   --Returns a Function
+
+    Anonymous Function 
+            A function which is declared without a name 
+            can be stored in a variable and Call it by printing the variable
+            
+    Arrow Function
+            let variable=(parameters)=> expression;
+            variable(arguments);
+
+    CallBack Function
+            function Callback(name,function){
+                Return function(name) 
+            }
+    Higher Order Function
+            

@@ -22,3 +22,95 @@ console.log(typeof {number:123,"name":"asd"});
 let x=5;
 console.log();
 
+//Operators
+//Type Cohersion
+//Temporary literals
+
+// control Statements
+for(let i=0;i<=10;i++){
+    console.log(i);
+    if(i==5){
+        break;
+    }
+}
+//
+function cube(number){
+for(let i=0;i<=10;i++){
+    console.log(i);
+    if(i==4){
+        return number;
+    }
+    if(i==5){
+        break;
+    }
+}
+}
+let c=cube(5);
+console.log(c);
+
+(function(){
+    console.log("hi");
+    console.log("nice to Meet you");
+})();
+
+
+const greet=()=>{
+    console.log("Hello");   
+}
+// console.log(greet);
+greet();
+function hi(name,location){
+    console.log(`Vanakkam da ${name} ${location} la irundhu`)
+}
+hi("mapla","theni")
+
+
+(()=>{})();
+//Function Expression[()]
+// invoke[()];
+
+
+//TASK-29-09-25
+function maxOfTwo(num1,num2){
+    if(num1>num2)
+    {
+        console.log(num1)
+    }
+    else
+    {
+        console.log(num2)
+    }
+}
+maxOfTwo(7,8);
+
+let func=function(num1,num2){
+    return num1*num2;
+}
+console.log(func(3,4));
+
+let cd=(company,duration)=>`company name:${company} ,duration : ${duration}`
+console.log(cd("Google","30 years"))
+
+let sub=(a,b)=>a-b;
+console.log(sub(-32,-12));
+
+// hey("mapla","theni")
+hey("mapla","chennai")
+const hey=(name,location)=>{
+console.log(`Vanakkam da ${name} ${location} la irundhu`);
+}
+
+
+let call=(func,name,location)=>{
+    return func(name,location);
+}
+call(hey,"Adam","America");
+let what=()=>console.log("Function called");
+what()
+
+//Higher Order Function
+function funct(){
+    return (a,b)=>a*b;
+}
+const u=funct();
+console.log(u(3,2));

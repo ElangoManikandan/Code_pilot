@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Example</title>
+</head>
+<body>
+  <h2>My Fruit List</h2>
+  
+  <ul id="list">
+    <li>Apple</li>
+    <li>Banana</li>
+  </ul>
+
+  <button onclick="addFruit()">Add Fruit</button>
+
+  <script>
+    let fruits = ["Mango", "Orange", "Grapes", "Pineapple"];
+    let index = 0;
+
+    function addFruit() {
+      if (index < fruits.length) {
+        let ul = document.getElementById("list");
+        let newItem = document.createElement("li");
+        newItem.innerText = fruits[index];
+        ul.appendChild(newItem);
+        index++;
+      } else {
+        alert("No more fruits to add!");
+      }
+    }
+  </script>
+</body>
+</html>
