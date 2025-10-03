@@ -142,8 +142,6 @@ functions
                 Return function(name) 
             }
     Higher Order Function
-            
-
             Array
                 Collection of Data
                 Using Square Brackets
@@ -157,9 +155,50 @@ functions
         push()-Add elements to the last
         pop()-Removes elements in the last
         unswift()-add element in first
-        swift()-delete element in the last
+        swift()-delete element in the first
 
         indexOf()-FInd index of the particular value
         if value not present -Returns -1
         includes()-Checks Data present in the array
         if not present in array- returns false
+
+        Slice Vs Splice
+        slice-used to copy the range of elements 
+                -Wont affect the original Array
+        splice -used to Add and Modify the Elements 
+                -Returns the deleted Elements
+                -It affects the original Array
+                Syntax:
+                splice(start_index,delete_count,replace_elements)
+                Add element by Splice(start index,0,replace_elements)
+                Remove Element by Splice(start_index,delete_count)
+        Join
+        -Converts ARRAY to String
+        Split
+        -Converts String to Array
+
+        For Each
+        --Inside Array module
+        --It iterates into the array
+        --Doesnt Return New Array
+        --vehicles.forEach()
+
+        Map
+        --iterates all Elements
+        --Returns array of Changed Elements
+        --array.map(function)
+        --(USE MOSTLY FOR MODIFY ELEMENTS)
+
+
+        Filter
+        --Stores in Array which elements are passed the required Condition 
+        --Returns array of Passed Elements
+        --array.filter(function)
+        --(USE FOR SELECTING ELEMENTS BASED ON CONDITION)
+
+        Reduce
+        --array.Reduce(Function)
+        --iterates through All Elements
+        --Returns the aggregated answer(Single value)
+        --(USE FOR AGGREGATE A ARRAY LIKE(SUM,COUNT,AVG))
+

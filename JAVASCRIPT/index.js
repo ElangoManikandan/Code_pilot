@@ -130,3 +130,42 @@ drinks.includes('sprite');
 console.log(drinks)
 drinks.includes('Sprite');
 console.log(drinks.indexOf('sprite'));
+
+const icecreams=['vanilla','chocolate','strawberry','butterscotch']
+console.log(icecreams.splice(2,1))
+console.log(icecreams)
+// icecreams.splice(0,4,"blackforest","whiteforest");
+// console.log(icecreams.splice(0,4,"blackforest","whiteforest"));
+// console.log(icecreams)
+console.log(icecreams.join(''))
+let str="Good morning Students";
+console.log(str.split(""))
+const vehicles=['car','bike','truck','bus']
+for(let i=0;i<vehicles.length;i++){
+    console.log(vehicles[i])
+}
+vehicles.forEach((vehicle )=>{
+    console.log(vehicle,"was sold")
+})
+//When We pass Two Arguments inside The Arrow Function of the ForEach Loop...
+// The First Arguments are array elements and The second Arguments are indexes
+vehicles.forEach((vehicle,i)=>{
+    console.log(i,vehicle,"was sold");  
+})
+
+const prices=[100,200,300,400,500]
+const changedPrices=prices.map((price)=>price+price*0.05);
+console.log(changedPrices);
+
+ console.log(prices.filter((price)=>price>200))
+
+ console.log(prices.map((price)=>price>200))
+let above200= prices.filter((price)=>price>200)
+console.log(above200);
+
+let answer=prices.reduce(
+    (accumulator,current_element)=>{
+        return accumulator+current_element
+    },0
+)
+console.log(answer)
