@@ -157,7 +157,7 @@ functions
         unswift()-add element in first
         swift()-delete element in the first
 
-        indexOf()-FInd index of the particular value
+        indexOf()-Find index of the particular value
         if value not present -Returns -1
         includes()-Checks Data present in the array
         if not present in array- returns false
@@ -165,6 +165,7 @@ functions
         Slice Vs Splice
         slice-used to copy the range of elements 
                 -Wont affect the original Array
+
         splice -used to Add and Modify the Elements 
                 -Returns the deleted Elements
                 -It affects the original Array
@@ -202,3 +203,5 @@ functions
         --Returns the aggregated answer(Single value)
         --(USE FOR AGGREGATE A ARRAY LIKE(SUM,COUNT,AVG))
 
+FLAT ARRAY
+        --Convert multidimensional array to single array

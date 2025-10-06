@@ -139,7 +139,7 @@ console.log(icecreams)
 // console.log(icecreams)
 console.log(icecreams.join(''))
 let str="Good morning Students";
-console.log(str.split(""))
+console.log(str.split(" "))
 const vehicles=['car','bike','truck','bus']
 for(let i=0;i<vehicles.length;i++){
     console.log(vehicles[i])
@@ -169,3 +169,8 @@ let answer=prices.reduce(
     },0
 )
 console.log(answer)
+
+const myFunction=new Function('a','b',"return a * b");
+console.log(myFunction(4,3))
+
+//OBJECTS IN ARRAY

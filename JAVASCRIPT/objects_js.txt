@@ -1,0 +1,37 @@
+OBJECT IN JAVASCRIPT
+        -It is a Data Structure 
+            used to Store Collection of Key Value Pairs
+        -It can Store Objects,Functions too
+
+    -Key,Value Pairs
+    -const person={name:"qwe",
+    age:33,
+    phone:null,
+    }
+    ACCESSING AN OBJECT ELEMENTS
+        -using Key
+        -two ways
+        -console.log(person.name)
+        -console.log(person[name])
+
+    . NOTATION in objects
+        -Used to access a value of a Object
+    [] NOTATION in objects
+
+    ADDING NEW PAIRS IN OBJECT
+    --person.passed_out=2025
+
+    PRINTING keys IN OBJECT
+    for(i in person){
+        console.log(i)
+    }
+
+    PRINTING values in OBJECT
+    for(i in person){
+        console.log(person[i])
+        }
+
+    DELETE OBJECT
+    delete Objectname
+    
+    OBJECT CONSTRUCTOR  
