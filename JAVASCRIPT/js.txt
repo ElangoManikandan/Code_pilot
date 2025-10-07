@@ -75,6 +75,10 @@ NON PRIMITIVE data types
 
     TYPES OF OPERATORS
     -Arithmetic OPERATORS(+-*/%==)
+    -Assignment OPERATORS
+    -Logical OPERATORS
+    -Unary OPERATORS
+    -Conditional OPERATORS
 
     let a=10,b=3;
     console.log(a+b)
@@ -83,9 +87,7 @@ NON PRIMITIVE data types
     console.log(a/b)
     console.log(a%b)
     console.log(a**b)
-    -Assignment OPERATORS
-
-    -Logical OPERATORS
+    
 
 Loops
 --For 
@@ -97,6 +99,7 @@ Loops
 Control Statements
 ----Conditional Statements
 ----Iterative Statements
+-Jumping Statements
 --Break
 --Continue
 --Return
@@ -122,7 +125,6 @@ functions
     function_name(arguments);
 
     TYPES OF functions
-
     Regular                 --Normal Function
     Anonymous function      --Without name
     Arrow                   --Single Line
@@ -182,6 +184,7 @@ functions
         --Inside Array module
         --It iterates into the array
         --Doesnt Return New Array
+        --Function as argument
         --vehicles.forEach()
 
         Map
@@ -205,3 +208,7 @@ functions
 
 FLAT ARRAY
         --Convert multidimensional array to single array
+
+ARRAY DESTRUCTURING
+--Unpacking values from the Array
+

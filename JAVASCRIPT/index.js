@@ -173,4 +173,14 @@ console.log(answer)
 const myFunction=new Function('a','b',"return a * b");
 console.log(myFunction(4,3))
 
-//OBJECTS IN ARRAY
+//ARRAY DESTRUCTURING
+
+//
+let arr=[1,2,3,4];
+console.log(arr[0]);
+// let[val1,val2,val3,val4]=arr;
+// console.log(val1);
+let[val1,...val4]=arr;
+console.log()
+
+

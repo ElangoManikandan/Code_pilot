@@ -22,7 +22,8 @@ console.log(person)
 person.info()
 person.display_school()
 // delete person.school;
-for(i in person){console.log(person[i])}
+for(i in person)
+    {console.log(person[i])}
 
 console.log(Object.keys(person));
 console.log(Object.values(person));
@@ -56,3 +57,33 @@ obj.info()
 obj.id=101
 delete obj.voter_id;
 console.log(Object.entries(obj))
+
+// const gowtham={
+//     name:"Gowtham",
+//     last_name:"Bakkiyaraj",
+//     age:21
+// }
+var {name,last_name}=gowtham
+console.log(name,last_name);
+
+ intArr=[1,2,3,4]
+ let{val1,...val2}=intArr
+ console.log(val2);
+ 
+
+arr=["qwe","asd","zxc"]
+arr2=["jkl","nm,",...arr]
+console.log(arr2);
+
+const gowtham={
+    name:"Gowtham",
+    last_name:"Bakkiyaraj",
+    age:21
+}
+const developer={
+    name:"virat",
+    name:"Gowtham",
+    last_name:"Bakkiyaraj",
+    age:21
+}
+console.log(developer);

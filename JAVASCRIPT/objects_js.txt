@@ -32,6 +32,22 @@ OBJECT IN JAVASCRIPT
         }
 
     DELETE OBJECT
-    delete Objectname
+    delete Objectname;
     
-    OBJECT CONSTRUCTOR  
+    OBJECT CONSTRUCTOR 
+    new Object(); 
+
+
+    OBJECT DESTRUCTURING
+    --CONVERTS OBJECTS INTO SEPARATE KEY Variables
+    --
+
+    REST Operators(...)
+     --(...variable)
+     Rest Operator Stores Rest of the values in array 
+     It will happen when operator used as variable
+
+    Spread operator(...)
+    --Used to Expand an array
+    --Unpacking existing Array
+    It will happen when operator used as value
