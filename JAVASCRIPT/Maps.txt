@@ -1,0 +1,11 @@
+MAPS
+    --Stores Key Value pairs     
+
+
+
+
+    Map Methods
+    1.set()
+    2.get()
+    3.has()
+    4.clear()

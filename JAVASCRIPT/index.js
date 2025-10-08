@@ -182,5 +182,11 @@ console.log(arr[0]);
 // console.log(val1);
 let[val1,...val4]=arr;
 console.log()
+var a=10;
+var a=20;
+console.log(a);
 
-
+arr78=[1,2,3,1,2,3]
+for(i in arr78){
+    console.log(i)
+}

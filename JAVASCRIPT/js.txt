@@ -94,7 +94,7 @@ Loops
 --While
 --Do-While
 --For in(Returns index of the elements)
---For of(Returns index of the elements)
+--For of(Returns values of the elements)
 
 Control Statements
 ----Conditional Statements
@@ -117,7 +117,6 @@ Iterative Statements
 
 functions
     It is a Block of code that can be reused whenever we want
-
     Syntax:
     function function_name(parameters){
         Statements;
@@ -125,11 +124,11 @@ functions
     function_name(arguments);
 
     TYPES OF functions
-    Regular                 --Normal Function
-    Anonymous function      --Without name
-    Arrow                   --Single Line
-    CallBack                --Callback Another Function
-    Higher Order Function   --Returns a Function
+    1.Regular                 --Normal Function
+    2.Anonymous function      --Without name
+    3.Arrow                   --Single Line
+    4.CallBack                --Callback Another Function
+    5.Higher Order Function   --Returns a Function
 
     Anonymous Function 
             A function which is declared without a name 

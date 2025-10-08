@@ -40,7 +40,7 @@ OBJECT IN JAVASCRIPT
 
     OBJECT DESTRUCTURING
     --CONVERTS OBJECTS INTO SEPARATE KEY Variables
-    --
+    --Unpacking the values in the existing array
 
     REST Operators(...)
      --(...variable)
