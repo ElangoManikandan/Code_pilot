@@ -190,3 +190,8 @@ arr78=[1,2,3,1,2,3]
 for(i in arr78){
     console.log(i)
 }
+let numbers=[2,1,4,5,7,8,44]
+let even_numbers=numbers.filter((number)=>number%2==0)
+console.log(even_numbers)
+console.log(2=="2.0")
+let arr3=[1,2,3,4]

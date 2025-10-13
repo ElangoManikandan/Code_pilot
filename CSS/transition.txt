@@ -30,3 +30,4 @@ Main properties:
     transition-delay
 
 using shorthand: transition: all 0.5s ease-in-out 0s;
+transition-property,transition-duration,transition-timing-function,transition-delay

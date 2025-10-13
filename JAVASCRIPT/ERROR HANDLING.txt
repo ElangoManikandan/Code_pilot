@@ -1,0 +1,23 @@
+ERROR
+A problem Which Prevents the code from running as expected.
+Types of Errors:
+1.Syntax Error
+2.Reference Error
+3.Type Error
+4.Range Error
+5.Custom Error
+
+ERROR Handling
+A Process of Dealing with Errors
+We can catch,handle,and recover from Errors
+Using
+-Try 
+-catch
+-Finally
+
+Example:
+try{
+    let num=10/0;//NOT AN ERROR
+    let result=x+5;//ReferenceError
+    console.log(result)
+}

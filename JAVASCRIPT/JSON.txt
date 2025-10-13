@@ -1,0 +1,30 @@
+JSON
+--LightWeight Data
+--Used to store and Exchange Data
+--EASY for humans to read and Machines to parse
+
+Properties:
+--Cannot Hold Functions,Comments and Undefined values
+
+Difference between JSON and Javascript object
+THey look like similar,But
+--JSON is in string format
+--Javascript object is an Actual object
+
+Parsing JSON:
+--Converting JSON to Object
+
+{
+    "name":"Kane",
+    "age":21,
+    "isStudent":false
+}
+JSON.stringify() ->Object to JSON
+JSON.parse->JSON to Object
+
+
+fetch('http://api.example.com/user')
+.then(response=>response.json())
+.then(data=>{
+    console.log(data);
+})

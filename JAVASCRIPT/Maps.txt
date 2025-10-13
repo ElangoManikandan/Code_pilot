@@ -1,11 +1,13 @@
 MAPS
     --Stores Key Value pairs     
-
-
-
+    --allow duplicates
+    --maintains insertion Order
+    
 
     Map Methods
-    1.set()
-    2.get()
+    1.set(key,value)
+    2.get(key)
     3.has()
     4.clear()
+    5.delete(key)
+    6.size()

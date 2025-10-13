@@ -1,13 +1,14 @@
 SETS 
-    A Set is a collection of unique values -no duplicates found
+    -A Set is a collection of unique values 
+    -duplicates not allowed
     It can store any type of Value
     syntax:
     const numbers=new Set([1,2,3,4,5]);
     console.log(numbers);  
 
     Set Methods
-    add(value)  -Adds a value
-    delete(value) -Removes a value
-    has(value)  -Check if a value exists
-    clear()   -Removes all values
-    size()     Returns totl count of values on the Set
+    add(value)      -Adds a value
+    delete(value)   -Removes a value
+    has(value)      -Check if a value exists
+    clear()         -Removes all values
+    size()          -Returns totl count of values on the Set

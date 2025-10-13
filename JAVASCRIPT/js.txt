@@ -93,8 +93,8 @@ Loops
 --For 
 --While
 --Do-While
---For in(Returns index of the elements)
---For of(Returns values of the elements)
+--For in  (Returns index of the elements)
+--For of (Returns values of the elements)
 
 Control Statements
 ----Conditional Statements
@@ -139,14 +139,22 @@ functions
             variable(arguments);
 
     CallBack Function
-            function Callback(name,function){
-                Return function(name) 
-            }
+    function function_name()
+     {
+        //Statements
+        another_function();
+        }
+            
     Higher Order Function
+        Input->Function
+        Return->Function
+        function HigherOrderFunction(name,function){
+                Return function(name); 
+            }
             Array
                 Collection of Data
                 Using Square Brackets
-                index Starting feom 0
+                index Starting from 0
                 can store multiple data types
                 mutable
                 have many builtin functions to modify
@@ -164,10 +172,12 @@ functions
         if not present in array- returns false
 
         Slice Vs Splice
-        slice-used to copy the range of elements 
+        slice
+                -used to copy the range of elements 
                 -Wont affect the original Array
 
-        splice -used to Add and Modify the Elements 
+        splice  
+                -used to Add and Modify the Elements 
                 -Returns the deleted Elements
                 -It affects the original Array
                 Syntax:

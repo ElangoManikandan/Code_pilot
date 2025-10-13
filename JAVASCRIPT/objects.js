@@ -83,7 +83,7 @@ const gowtham={
 const developer={
     name:"virat",
     name:"Gowtham",
-    last_name:"Bakkiyaraj",
+    last_name:{name:"Bakkiyaraj",age:50},
     age:21
 }
-console.log(developer);
+console.log(developer.ast_name?.age);
