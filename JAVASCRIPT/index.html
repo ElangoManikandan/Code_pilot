@@ -7,7 +7,17 @@
 </head>
 <script></script>
 <body>
-   <h1 style="text-align: center;" onclick="alert('You clicked a heading')">Hello</h1> 
+   <h1 style="text-align: center;" onclick="alert('You clicked a heading')" id="hello">Hello</h1>
+   <p class="para">qeyjrweaeffgd</p> 
+   <p class="para">qeyjrfgd</p> 
 </body>
-<script src="index.js"></script>
+<script>
+    let heading=document.getElementById('hello')
+    // console.log(heading)
+    // heading.innerText='Hi Shinchan'
+    // let para=document.querySelector('.para');
+    // console.log(para)
+    let para=document.querySelectorAll('.para');
+    console.log(para)
+</script>
 </html>

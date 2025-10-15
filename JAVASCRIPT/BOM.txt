@@ -1,0 +1,3 @@
+
+It Represents browser-specific objects provided by the browser
+

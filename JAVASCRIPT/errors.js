@@ -26,3 +26,23 @@ try{
     console.log(30)
 }
 
+let age=17;
+try{
+    if(age<18){
+        throw new Error();
+    }
+    else{
+        console.log("Access Granted");
+    }
+}catch(err){
+console.log("Underage Access Denied");
+}
+
+person='name:"elango","age":21';
+try{
+    JSON.parse(person);
+}
+catch(err){
+    console.log("Invalid JSON,(missing quotes for key)")
+}
+

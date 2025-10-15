@@ -1,0 +1,44 @@
+What is a DOM?
+        -It is a Structure of HTML document
+        -It is a Programming Interfaces for Web Browsers
+         
+
+
+         👉 HTML Page
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Hello World</h1>
+    <p>Welcome to JavaScript DOM</p>
+  </body>
+</html>
+
+👉 Browser Creates DOM Tree
+
+Document(node)
+ └── html
+      ├── body
+      │    ├── h1 → "Hello World"
+      │    └── p/  → "Welcome to JavaScript DOM"
+      |── head
+
+The browser converts your HTML document into 
+   a tree-like structure of objects that JavaScript 
+   can read, modify, or delete.
+
+
+👉 Now with JavaScript, you can:
+
+    --> Change <h1> text
+    --> Add a new <button>
+    --> Delete <p>
+
+👉 DOM is a bridge between HTML and JavaScript.
+   It lets JS talk to HTML elements and control them dynamically
+
+   BOM=Browser Object Model
+
+It represents everything that user provides
+
+

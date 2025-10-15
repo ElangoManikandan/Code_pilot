@@ -1,0 +1,29 @@
+
+
+It is a Global Object for everything in the Browser.
+
+window.prompt()
+
+window.alert()
+
+window.confirm()
+
+window.location()
+
+window.location.href()
+
+window.location.reload()
+
+SELECTING ELEMENTS
+
+querySelector('id_name')
+
+querySelectorAll('.class_name')
+
+getElementById('Id_name')
+
+getElementsByClassName('para1')
+
+getElementsByTagName('tag_name')
+
+
