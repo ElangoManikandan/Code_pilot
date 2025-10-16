@@ -183,7 +183,7 @@ functions
                 Syntax:
                 splice(start_index,delete_count,replace_elements)
                 Add element by Splice(start index,0,replace_elements)
-                Remove Element by Splice(start_index,delete_count)
+                Remove Element by Splice(start_index,delete_count,0)
         Join
         -Converts ARRAY to String
         Split

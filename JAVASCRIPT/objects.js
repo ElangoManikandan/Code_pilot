@@ -47,12 +47,16 @@ obj={
     voter_id:null,
     hobbies:["games","insta"],
     college:{
-        name:"GCEB"
+        name:"GCEB",
     },
     info:function(){
-        console.log(obj)
+        console.log(obj.name);
+    },
+    biodata:function () {
+      obj.info()  
     }
 }
+obj.biodata()
 obj.info()
 obj.id=101
 delete obj.voter_id;
@@ -86,4 +90,4 @@ const developer={
     last_name:{name:"Bakkiyaraj",age:50},
     age:21
 }
-console.log(developer.ast_name?.age);
+console.log(developer.last_name?.age);

@@ -134,6 +134,8 @@ console.log(drinks.indexOf('sprite'));
 const icecreams=['vanilla','chocolate','strawberry','butterscotch']
 console.log(icecreams.splice(2,1))
 console.log(icecreams)
+console.log(icecreams.splice(1,2))
+console.log(icecreams)
 // icecreams.splice(0,4,"blackforest","whiteforest");
 // console.log(icecreams.splice(0,4,"blackforest","whiteforest"));
 // console.log(icecreams)
@@ -153,13 +155,14 @@ vehicles.forEach((vehicle,i)=>{
     console.log(i,vehicle,"was sold");  
 })
 
-const prices=[100,200,300,400,500]
+// const prices=[100,200,300,400,500]
 const changedPrices=prices.map((price)=>price+price*0.05);
 console.log(changedPrices);
 
  console.log(prices.filter((price)=>price>200))
+ const prices=[100,200,300,400,500]
 
- console.log(prices.map((price)=>price>200))
+ console.log(prices.map((price)=>price*200))
 let above200= prices.filter((price)=>price>200)
 console.log(above200);
 
