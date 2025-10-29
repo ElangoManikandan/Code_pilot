@@ -198,3 +198,22 @@ let even_numbers=numbers.filter((number)=>number%2==0)
 console.log(even_numbers)
 console.log(2=="2.0")
 let arr3=[1,2,3,4]
+
+//String concatenation
+console.log('q'+'q')//qq type String
+console.log("1"+2)//12 type String
+console.log(typeof ("2"-3))//-1  type number
+console.log(a)
+var a=10
+console.log(typeof (1-"qw"+1))//NaN type number
+console.log(1-"qw"+1)//NaN type number
+console.log("y"+1+2)//y12 Type String
+console.log('w'+3)//w3 Type String
+console.log(2+'2')//22 Type String
+console.log(2-1)//1 Type number
+console.log(1+"22")//122 Type String
+console.log(22+'y2')//22y2 Type String
+console.log(22+'y2')//22y2 Type String
+console.log("qw"-1)//NaN Type number
+console.log(typeof("qw"-1))// NaN Type number
+console.log(22+'2we'+1)

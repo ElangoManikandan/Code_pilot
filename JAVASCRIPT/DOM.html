@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+    @keyframes beat{
+        0% {}
+        50% {transform: scale(1.1);}
+        100% {transform: scale(1);}
+    }
+    .beat{
+        color: red;
+        background-color: blue;
+        animation: beat 1s ease infinite;
+    }
+    .light{
+        background-color: white;
+        color: black;
+    }
+    .dark{
+        background-color: black;
+        color: white;
+    }
+</style>
+<body>
+    <h1 id="head">DOM</h1>
+
+<p class="para">Lorem ipsum dolor sit amet.</p>
+<p class="para">consectetur adipisicing autem.</p>
+<p class="para para3">atque magni <span style="display: none;">corruption</span> excepturi molestias?</p>
+
+<div id="form">
+    <button onclick="openForm()">Click</button>
+    <button onclick="addBeat()">Add Beat</button>
+    <button onclick="removeBeat()">remove Beat</button>
+    <input type="checkbox" id="mode" onchange="togglePage()">
+    <button>🌅</button>
+</div>
+</body>
+<script>
+    function addBeat(){
+        let head = document.getElementById('head');
+        head.classList.add("beat");
+    }
+    function removeBeat(){
+        let head = document.getElementById('head');
+        head.classList.remove("beat");
+    }
+    function togglePage(){
+        let mode = document.getElementById("mode");
+        let body = document.body;
+        body.classList.toggle("dark");
+    }
+</script>
+</html>

@@ -16,3 +16,10 @@ console.log(uniq.size);
 
 const arr=new Array(1,2,3,3);
 console.log(arr);
+
+
+const data='[{"name":"Alice"},{"name":"Bob"},{"name":"Alice"}]';
+let json_data=JSON.parse(data);
+let{name1,name2,name3}=json_data;
+console.log(name1,name2,name3)
+let set=new Set()
