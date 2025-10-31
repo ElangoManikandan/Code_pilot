@@ -41,6 +41,17 @@
     <button onclick="removeBeat()">remove Beat</button>
     <input type="checkbox" id="mode" onchange="togglePage()">
     <button>🌅</button>
+    <h1 id="head">DOM</h1>
+
+<p class="para">Lorem ipsum dolor sit amet.</p>
+<p class="para">consectetur adipisicing autem.</p>
+<p class="para para3">atque magni <span style="display: none;">corruption</span> excepturi molestias?</p>
+
+<div id="form">
+    <button onclick="openForm()">Click</button>
+</div>
+
+
 </div>
 </body>
 <script>
@@ -57,5 +68,26 @@
         let body = document.body;
         body.classList.toggle("dark");
     }
+    let name = "aravidh";
+    function openForm(){
+        let form = document.getElementById("form");
+        form.innerHTML = `
+            <form> 
+                <input type="text" placeholder="enter your name" value="${name}">
+                <input type="number" placeholder="enter your AGE">
+                <button type="submit">Submit</button>
+            </form>
+        `;
+        document.getElementById("head").style.backgroundColor = "blue";
+        document.getElementById("head").style.textAlign = "center";
+        document.getElementById("head").style.color = "white";
+
+    }
+
+    document.getElementById("head").innerText = "BOM";
+    const p = document.getElementsByClassName("para");
+    console.log(p);
+    const p1 = document.querySelector(".para");
+    console.log(p1);
 </script>
 </html>

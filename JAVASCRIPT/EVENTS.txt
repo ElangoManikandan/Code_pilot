@@ -1,0 +1,22 @@
+EVENT:
+    Any Action by the user or browser.
+
+Mouse events-click,dblclick,mouseover,mouseout
+
+Keyboard events- Keydown ,keyup,keypress
+
+Form Events -submit,focus,change
+
+Window Events- load,resize,scroll
+
+event Handling
+(Inline)
+<button onclick="alert("Hello");">CLick Me</button>
+<button onclick="sayHello();">CLick Me</button>
+<script>
+function sayHello(){
+    console.log("Hello")
+}
+</script>
+
+(internal way)

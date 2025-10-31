@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onmouseover="
+    alert('Hi')">Hover Me</button>
+</body>
+<script>
+    let newbutton=document.createElement("button");
+    document.body.appendChild(newbutton);
+    newbutton.innerText="Click it!"
+    newbutton.onclick=sayHello;
+    function sayHello(){
+        alert("I am from Script Tag")
+    }
+    let changeBackgroundButton=document.createElement("button");
+    changeBackgroundButton.innerText="Change Background";
+    changeBackgroundButton.addEventListener()
+</script>
+</html>
