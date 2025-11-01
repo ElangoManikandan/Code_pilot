@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h2 id="heading">Hello </h2>
+    <ul id="items">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <h2>Enter the input to be entered as new list</h2>
+    <input type="text" id="input1" value=" " >
+    <button onclick="newListByInput()">Click to Add new Item</button>
+    <p id="output"></p>
+    <button onclick="deleteItem()">Click to delete Last Item</button>
+</body>
+<script>
+    let head1=document.getElementById("heading");
+    head1.innerText="DOM Test Starts";
+    let ulist=document.getElementById("items")
+    function newList(){
+        let li3=document.createElement("li");
+    li3.innerText="A new list item";
+    ulist.appendChild(li3)
+    }
+    let count=1;
+    let newIdG=1;
+    function newListByInput(){
+        let list1=document.createElement("li");
+        let newId="newInput"+count;
+        list1.setAttribute("id",newId);
+        let input1=document.getElementById("input1");
+        list1.innerText=input1.value;
+        ulist.appendChild(list1)
+        let li=document.getElementById(newId);
+        newIdG=newId;
+        li.addEventListener("click",()=>{
+            li.style.backgroundColor="lightgreen";
+        })
+        count++;
+        input1.value="";
+    }  
+    function deleteItem(){
+        let lastList=document.getElementById(newIdG);
+        ulist.removeChild(lastList)
+    }
+</script>
+</body>
+</html>

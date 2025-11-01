@@ -1,0 +1,13 @@
+
+Async
+
+IF you Put Async before a funciton,It automatically returns a promise.
+
+async function sayHello(){
+    return "Hello Denny!"';
+}
+
+
+Await
+
+Await Tells JS TO wait for the Promise to finish before continuing it can only be used inside async function 

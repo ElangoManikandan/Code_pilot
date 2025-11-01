@@ -1,0 +1,14 @@
+PROMISE
+    A promise in Javascript is an Object that represents the result of an Asyncronous Operation.
+    It can be in one of the Three Stages
+    1.Pending
+    2.Fulfilled
+    3.Rejected
+
+    Why we need promises?
+    -Handles Async Tasks
+    -Avoids CallBack hell
+
+    .then()- for success,
+    .catch()-for errors,
+    .finally() for Cleanup.

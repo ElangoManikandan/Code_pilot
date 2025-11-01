@@ -1,10 +1,16 @@
-What is a DOM?
-        -It is a Structure of HTML document
-        -It is a Programming Interfaces for Web Browsers
-         
+📌 What is DOM?
 
+👉 DOM = Document Object Model
 
-         👉 HTML Page
+👉 Structure of HTML document
+
+👉 It is a programming interface for web pages.
+
+👉 The browser converts your HTML document into 
+   a tree-like structure of objects that JavaScript 
+   can read, modify, or delete.
+
+👉 HTML Page
 
 <!DOCTYPE html>
 <html>
@@ -23,11 +29,6 @@ Document(node)
       │    └── p/  → "Welcome to JavaScript DOM"
       |── head
 
-The browser converts your HTML document into 
-   a tree-like structure of objects that JavaScript 
-   can read, modify, or delete.
-
-
 👉 Now with JavaScript, you can:
 
     --> Change <h1> text
@@ -35,10 +36,458 @@ The browser converts your HTML document into
     --> Delete <p>
 
 👉 DOM is a bridge between HTML and JavaScript.
-   It lets JS talk to HTML elements and control them dynamically
+   It lets JS talk to HTML elements and control them dynamically.
+   
 
-   BOM=Browser Object Model
+📌 What is BOM?
 
-It represents everything that user provides
+👉 BOM = Browser Object Model
+
+👉 It represents everything the browser provides 
+   apart from the HTML document.
+
+👉 While DOM deals with the page content, 
+   BOM deals with the browser window itself.
+
+🔹 Main Parts of BOM
+
+👉 window object
+
+    The global object for everything in the browser.
+
+    All JS running in the browser is inside window.
+
+    Example:
+
+        console.log(window.innerWidth);  // width of the browser window
+        console.log(window.innerHeight); // height of the browser window
+
+👉 navigator object
+
+    Info about the browser & device.
+
+    Example:
+
+        console.log(navigator.userAgent);  // browser details
+        console.log(navigator.language);   // browser language
+
+👉 location object
+
+    Info about the current URL.
+
+    Example:
+
+        console.log(location.href);  // full URL
+        location.reload();          // reload the page
+
+👉 history object
+
+    Controls browser history (back/forward).
+
+    Example:
+
+        history.back();   // go to previous page
+        history.forward(); // go to next page
+
+👉 Dialog Boxes
+
+    alert("Hello!")
+    prompt("Enter your name")
+    confirm("Are you sure?")
+
+🔹 Example Code
+
+<!DOCTYPE html>
+<html>
+<body>
+  <button onclick="showInfo()">Click Me</button>
+
+  <script>
+    function showInfo() {
+      alert("Browser language: " + navigator.language);
+      alert("Current page: " + location.href);
+    }
+  </script>
+</body>
+</html>
+
+👉 BOM is everything the browser gives us to interact 
+   with the browser itself, like window size, history, URL, and alerts.
+
+--------------------------------------------------------------------->
+
+🔹 Selecting Elements
+
+👉 querySelector('#id_name')
+
+👉 querySelectorAll('.class_name')
+
+👉 getElementById('id_name')
+
+👉 getElementsByClassName('para1')
+
+👉 getElementsByTagName('tag_name')
+
+--------------------------------------------------------------------->
+
+🔹 HTMLCollection
+
+  👉 Returned by methods like:
+
+    getElementsByClassName()
+
+    getElementsByTagName()
+
+  👉 It is live → updates automatically when DOM changes.
+
+  👉 Only contains HTML elements (no text nodes, comments).
+
+  👉 Can be accessed with index or for...of, but no forEach() directly.
+
+🔹 NodeList 
+
+  👉 Returned by methods like:
+
+    querySelectorAll()
+
+    childNodes
+
+  👉 It is usually static → does not auto-update when DOM changes.
+
+  👉 Contains all node types (elements, text nodes, comments).
+
+  👉 Supports forEach().
+
+--------------------------------------------------------------------->
+
+🧩 innerHTML, innerText, and textContent
+
+🔹 1. innerHTML
+
+  👉 Gets/sets the HTML + text inside an element.
+
+  👉 Parses HTML inside.
+
+  <p id="demo">Hello <b>World</b></p>
+  <script>
+    let el = document.getElementById("demo");
+    console.log(el.innerHTML); 
+    // "Hello <b>World</b>"
+
+    el.innerHTML = "Hi <i>Students</i>"; 
+    // 👀 Output → Hi *Students* (italic)
+  </script>
+
+  ✅ Use when you need to insert HTML content dynamically.
+
+🔹 2. innerText
+
+  👉 Gets/sets only the visible text.
+
+  👉 Ignores hidden text (CSS display:none, visibility:hidden).
+
+  👉 Slower → re-calculates CSS styles.
+
+  <p id="demo">Hello <span style="display:none">Hidden</span> World</p>
+  <script>
+    let el = document.getElementById("demo");
+    console.log(el.innerText); 
+    // "Hello World" (❌ Hidden ignored)
+
+    el.innerText = "Just Text"; 
+    // Output → Just Text
+  </script>
+
+  ✅ Use when you want text as the user sees it.
+
+🔹 3. textContent
+
+  👉 Gets/sets all text, even hidden.
+
+  👉 Ignores CSS.
+
+  👉 Faster than innerText.
+
+  <p id="demo">Hello <span style="display:none">Hidden</span> World</p>
+  <script>
+    let el = document.getElementById("demo");
+    console.log(el.textContent); 
+    // "Hello Hidden World" (✅ includes hidden)
+
+    el.textContent = "Only Plain Text"; 
+    // Output → Only Plain Text (no HTML parsed)
+  </script>
+
+  ✅ Use when you just need raw text data.
+
+🧩 Simple Rule 
+
+  innerHTML → When you need HTML inside.
+
+  innerText → When you want text as user sees.
+
+  textContent → When you need all raw text quickly.
+
+--------------------------------------------------------------------->
+
+🔹 Changing CSS with .style
+
+  👉 Every element has a .style property for inline CSS.
+
+  <p id="demo">Hello World</p>
+  <script>
+    let el = document.getElementById("demo");
+    el.style.color = "red";  
+    el.style.fontSize = "24px";  
+    el.style.backgroundColor = "yellow";  
+  </script> 
+  
+------------------------------------------------------------
+🔹 classList in JavaScript
+
+  👉 Every DOM element has a classList property, 
+  👉 A special object to manipulate CSS classes.
+  👉 Instead of rewriting the class="" manually, 
+    we can add/remove/toggle classes easily.
+
+  ✅ 1. classList.add(className)
+
+    👉 Adds one or more classes to the element.
+
+    <p id="demo" class="text">Hello World</p>
+    <script>
+      let el = document.getElementById("demo");
+      el.classList.add("highlight", "big"); 
+      // Now class="text highlight big"
+    </script>
+
+  ✅ 2. classList.remove(className)
+
+    👉 Removes one or more classes.
+
+    <p id="demo" class="text highlight big">Hello World</p>
+    <script>
+      let el = document.getElementById("demo");
+      el.classList.remove("big"); 
+      // Now class="text highlight"
+    </script>
+
+  ✅ 3. classList.toggle(className)
+
+    👉 Adds the class if not present, removes it if present 
+    (like a switch).
+
+    <p id="demo" class="text">Hello World</p>
+    <script>
+      let el = document.getElementById("demo");
+      el.classList.toggle("highlight"); // Adds highlight
+      el.classList.toggle("highlight"); // Removes highlight
+    </script>
+
+  ✅ 4. classList.contains(className)
+
+    👉 Checks if the element has a class.
+
+    <p id="demo" class="text highlight">Hello</p>
+    <script>
+      let el = document.getElementById("demo");
+      console.log(el.classList.contains("highlight")); // true
+      console.log(el.classList.contains("big")); // false
+    </script>
+
+🎯 add() → Apply style(s).
+
+🎯 remove() → Take style(s) away.
+
+🎯 toggle() → Switch style on/off.
+
+🎯 contains() → Check if style is applied.
+--------------------------------------------------------------------->
+
+🎯 Adding Elements Dynamically in JS
+
+🔹 1. document.createElement()
+
+👉 Creates a new element in memory.
+
+let newPara = document.createElement("p"); 
+
+🔹 2. Add Content
+
+👉 Use textContent, innerHTML, or append a text node.
+
+newPara.textContent = "This is a new paragraph!";
+
+🔹 3. Append to DOM
+
+append , replace , remove
 
 
+---------------------------------------------------------------------->
+🔹 Changing Attributes
+
+  ✅ getAttribute(name)
+
+    👉 Reads the value of an attribute.
+
+    <img id="pic" src="photo.jpg" alt="Demo">
+    <script>
+      let img = document.getElementById("pic");
+      console.log(img.getAttribute("src")); // "photo.jpg"
+      console.log(img.getAttribute("alt")); // "Demo"
+    </script>
+
+  ✅ setAttribute(name, value)
+
+    👉 Adds or changes an attribute.
+
+    <img id="pic" src="old.jpg" alt="Old Pic">
+    <script>
+      let img = document.getElementById("pic");
+      img.setAttribute("src", "new.jpg");  
+      img.setAttribute("alt", "New Picture");
+    </script>
+
+--------------------------------------------------------------------->
+
+🔹 1. What is an Event?
+
+👉 An event is any action by the user or the browser.
+Examples:
+
+  Mouse(cursor) events → click, dblclick, mouseover, mouseout
+
+  Keyboard events → keydown, keyup, keypress
+
+  Form events → submit, focus, change
+
+  Window events → load, resize, scroll
+
+🔹 2. Event Handling (Inline way)
+
+👉 The simplest way: 
+    To add onclick, onmouseover, etc. directly in HTML.
+
+<button onclick="sayHello()">Click Me</button>
+
+<script>
+function sayHello() {
+  alert("Hello from Inline Event!");
+}
+</script>
+
+🔹 3. Event Handling (JS Property way)
+
+👉 Assign function to event property in JS.
+
+<button id="btn">Click Me</button>
+
+<script>
+let button = document.getElementById("btn");
+button.onclick = function() {
+  alert("Hello");
+};
+button.onclick = function() {
+  alert("hi");
+};
+
+</script>
+
+🔹 4. Event Listener (Best Way ✅)
+
+👉 Use addEventListener() for flexibility.
+
+<button id="btn">Click Me</button>
+
+<script>
+let button = document.getElementById("btn");
+
+button.addEventListener("click", function() {
+  alert("Hello from Event Listener!");
+});
+
+// You can add multiple listeners without overwriting
+button.addEventListener("click", function() {
+  console.log("Another function runs too!");
+});
+</script>
+
+✅ Advantages of addEventListener:
+
+Multiple handlers possible.
+
+Cleaner separation of HTML & JS.
+
+Can remove listener with removeEventListener().
+
+🔹 5. Event Object
+
+👉 Every event has an event object with details 
+    like which key was pressed, mouse position, etc.
+
+<input type="text" id="input"> 
+
+<script>
+document.getElementById("input").addEventListener("keydown", function(event) {
+  console.log("Key pressed:", event.key);
+});
+</script>
+
+
+
+🪝 Event Bubbling
+
+    Event bubbling is a mechanism in the DOM 
+    where an event starts at the target element 
+    and then bubbles up (propagates) through its ancestors 
+    all the way to the root (document).
+
+  Example:
+
+    <div id="parent">
+        <button id="child">Click me</button>
+    </div>
+
+    document.getElementById('parent').addEventListener('click', () => {
+        console.log('Parent clicked');
+    });
+
+    document.getElementById('child').addEventListener('click', () => {
+        console.log('Child clicked');
+    });
+
+    The click event fires on the button (#child) 
+    and bubbles up to the parent (#parent).
+
+🪝 Event Delegation
+
+    Event delegation is a technique 
+    where you attach a single event listener 
+    to a common ancestor (often a parent element) 
+    instead of multiple child elements. 
+    You then use the event.target to determine 
+    which child was actually clicked.
+
+    ✅ Benefits:
+
+        Fewer event listeners = better performance
+
+        Easier to handle dynamic elements (added later)
+
+  Example:
+
+    <ul id="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+
+    document.getElementById('menu').addEventListener('click',(event)=>{
+        if (event.target.tagName === 'LI') {
+            console.log('You clicked on:', event.target.textContent);
+        }
+    });
+
+    Even if you later add more <li> elements dynamically, 
+    the event listener will still work 
+    because it is attached to the parent <ul>.
