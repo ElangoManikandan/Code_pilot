@@ -5,6 +5,7 @@ PROMISE
     2.Fulfilled
     3.Rejected
 
+    Promise(executor function(resolve,reject)=>{})
     Why we need promises?
     -Handles Async Tasks
     -Avoids CallBack hell
