@@ -1,0 +1,7 @@
+Types of Exports
+    -Named Exports
+    -Default Exports
+
+Why use import and Export?
+    It helps to save code in different Files and share functionality between them.
+    

@@ -1,7 +1,7 @@
 
 Async
 
-IF you Put Async before a funciton,It automatically returns a promise.
+IF you Put Async before a function,It automatically returns a promise.
 
 async function sayHello(){
     return "Hello Denny!"';
