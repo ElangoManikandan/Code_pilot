@@ -29,7 +29,7 @@ try{
     map.set(i,json_data[i]) 
     }
     console.log(map)
-}
+    }
     catch(err){console.log("JSON is not parsed Correctly")}
 
 

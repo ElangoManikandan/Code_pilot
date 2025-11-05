@@ -469,9 +469,7 @@ document.getElementById("input").addEventListener("keydown", function(event) {
     which child was actually clicked.
 
     ✅ Benefits:
-
         Fewer event listeners = better performance
-
         Easier to handle dynamic elements (added later)
 
   Example:

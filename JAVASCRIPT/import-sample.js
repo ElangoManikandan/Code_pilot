@@ -6,3 +6,4 @@ export function add(){
 export default function sub(b,c){
     return b-c;
 }
+export let age=21;
