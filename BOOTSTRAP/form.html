@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body style="background-color:black;">
+    <div class="container d-flex align-items-center justify-content-center " style="margin-top: 150px; background-color: cyan; width:fit-content; padding: 50px;">
+    <form>
+<div class="input-group mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+</div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+<label for="inputPassword5" class="form-label">Password</label>
+<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+<div id="passwordHelpBlock" class="form-text">
+  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+</div>
+<br>
+<label for="confirm-password" class="form-label">Confirm Password</label>
+<input type="password" id="confirm-password" class="form-control" >
+<br>
+
+<div class="mb-3">
+    <label  class="form-label">Age</label>
+    <input type="number" class="form-control" placeholder="Age must be between 18 and 60">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Phone</label>
+    <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Age must be between 18 and 60">
+  </div>
+   <label class="form-check-label mb-3" >
+    Gender
+  </label>
+  <div class="gender " style="display: flex;">  
+  <div class="form-check  mx-3">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" >
+    Male
+  </label>
+</div>
+<div class="form-check  mx-3">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" >
+    Female
+  </label>
+</div>
+<div class="form-check  mx-3">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+  <label class="form-check-label" >
+    Others
+  </label>
+</div>
+</div>
+<br>
+<label class="form-check-label mb-3" >
+    Address
+  </label>
+<div class="form-floating">
+  <textarea class="form-control" ></textarea>
+  <label >Enter your Address</label>
+</div>
+<div class="mb-3 mt-3">
+  <label for="formFile" class="form-label">Upload your Resume</label>
+  <input class="form-control" type="file" id="formFile">
+</div>
+<div class="form-check mb-3">
+  <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+  <label class="form-check-label" for="checkDefault">
+    I agree to the Terms and Conditions
+  </label>
+</div>
+<div class="buttons " style="text-align: center;">
+<button type="button" class="btn btn-danger">Reset</button>  
+<button type="submit" class="btn btn-primary">Submit</button>
+</div>
+  </div>
+</form>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>

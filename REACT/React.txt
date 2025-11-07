@@ -1,0 +1,16 @@
+React:
+It is a Javascript library
+-Created by Meta
+
+Helps devs to build interactive UI
+
+Instead of reloading the whole page.
+React updates the part of the UI.
+
+React -Component Based
+
+
+
+DIFFING ALGM:
+    Algm to find which Component is Changed
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    span{
+        z-index: 2;
+    }
+    #div1{
+        z-index: 1;
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        position: relative;
+    }
+    #div2{
+        z-index: 2;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        background-color: red;
+        top: 30px;
+    }
+</style>
+<body>
+    <div id="div1">
+
+    </div>
+    <div id="div2">
+        </div>
+    <h1><span>Lorem ipsum dolor sit amet.</span></h1>
+</body>
+</html>
