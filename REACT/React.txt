@@ -14,3 +14,57 @@ React -Component Based
 DIFFING ALGM:
     Algm to find which Component is Changed
 
+Components:
+
+    --Functional Components
+    --Class Components
+
+jsx 
+        syntax extension for js.
+        (HTML inside JS)
+        Makes code More Readable,Structured.
+    ex:
+        const element=<h1>Hi</h1>;
+
+RULES FOR jsx;
+    1.One Root element.
+            --Must return a Single Root Tag.
+            return(
+                <div>
+                <h1>qwertyui<h1/>
+                </div>
+            )
+
+    2.Use className Instead of class
+            --Because class is a reserved word in js.
+        
+
+    3.Attributes are in CamelCase
+    ex:onClick,tabIndex,
+
+    4.Expressions inside  { }
+    ex:
+    const name="Elango";
+    return <h1>Hello,{name}<h1/>;
+
+    5.jsx must be Closed
+    ex:
+    <img src={"logo.png"}/>
+
+    6.Conditional Rendering
+    (using && or ? :)
+
+STYLING IN JSX 
+    <p style={{style="blue",fontSize:"20px"}}> Styled Text</p>
+; - > ,
+values in "",
+CamelCase
+{ }
+
+COMMENTS in JSX
+    {/* Comments inside this symbol */}
+
+
+
+
+
