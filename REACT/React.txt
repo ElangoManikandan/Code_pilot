@@ -65,6 +65,26 @@ COMMENTS in JSX
     {/* Comments inside this symbol */}
 
 
+HOOKS:
+    1.useState - For State Management
+        Lets you add state (variables that react watches and re-renders when changed)
 
+    2.useEffect 
+            -useEffect(()=>{},[])
+    
+    - Runs on Every Render
+    useEffect(()=>{
+        console.log("Component updated")
+    });
 
+    --Runs only on First Mount
+        useEffect(()=>{},[])
+    
+    Run when a Depedencies changes
+        -useEffect(()=>{},[count])
+
+PROPS IN React:
+
+    -
+        
 

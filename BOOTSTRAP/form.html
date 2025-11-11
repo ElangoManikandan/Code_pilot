@@ -11,28 +11,32 @@
 
 <body style="background-color:black;">
   <h1 style="text-align: center; color: white; margin-top: 50px;">Form Task</h1>
-  <div class="container d-flex align-items-center justify-content-center "
-    style="margin-top: 40px; background-color: cyan; width:fit-content; padding: 50px;">
+  <div class="container d-flex align-items-center justify-content-center " style="margin-top: 40px; background-image: linear-gradient(135deg,red,blue); color: white; width:fit-content; padding: 50px;">
     <form>
-      <div class="input-group mb-3">
-        <label for="name-input" class="form-label">Email address</label>
-        <input type="text" class="form-control" aria-label="Sizing example input"
-          aria-describedby="inputGroup-sizing-default" id="name-input" required>
+      <div class="mb-3">
+        <label for="name-input" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name-input" placeholder="Enter your name">
+      </div>
+      <div class="mb-3">
+        <label for="username-input" class="form-label">username</label>
+        <input type="text" class="form-control" id="username-input" placeholder="Enter your name">
       </div>
       <div class="mb-3">
         <label for="email-input" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="email-input" aria-describedby="emailHelp">
+        <input type="email" class="form-control" id="email-input" placeholder="Enter your email"
+          aria-describedby="emailHelp" required>
       </div>
+
       <label class="form-label">Password</label>
-      <input type="password" class="form-control" aria-describedby="passwordHelpBlock">
-      <div id="passwordHelpBlock" class="form-text">
+      <input type="password" class="form-control" aria-describedby="passwordHelpBlock" id="password-input" required>
+      <div id="passwordHelpBlock" class="form-text mb-3 " style="color: white;">
         Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special
         characters, or emoji.
       </div>
-      <br>
-      <label for="confirm-password" class="form-label">Confirm Password</label>
-      <input type="password" id="confirm-password" class="form-control">
-      <br>
+      <div class="mb-3">
+        <label for="confirm-password" class="form-label">Confirm Password</label>
+        <input type="password" id="confirm-password" class="form-control">
+      </div>
 
       <div class="mb-3">
         <label class="form-label" for="age-input">Age</label>
@@ -40,27 +44,27 @@
       </div>
       <div class="mb-3">
         <label class="form-label" for="phone-number-input">Phone</label>
-        <input type="number" class="form-control" id="phone-number-input" placeholder="Age must be between 18 and 60">
+        <input type="number" class="form-control" id="phone-number-input">
       </div>
       <label class="form-check-label mb-3">
         Gender
       </label>
       <div class="gender" style="display: flex;">
         <div class="form-check  mx-3">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-          <label class="form-check-label" for="exampleRadios1">
+          <input class="form-check-input" type="radio" name="gender"  value="Male" id="male" checked>
+          <label class="form-check-label" for="male">
             Male
           </label>
         </div>
         <div class="form-check  mx-3">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-          <label class="form-check-label" for="exampleRadios2">
+          <input class="form-check-input" type="radio" name="gender"  value="Female" id="female">
+          <label class="form-check-label" for="female">
             Female
           </label>
         </div>
         <div class="form-check  mx-3">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-          <label class="form-check-label" for="exampleRadios3">
+          <input class="form-check-input" type="radio" name="gender"  value="Others" id="others">
+          <label class="form-check-label" for="others">
             Others
           </label>
         </div>
@@ -70,15 +74,15 @@
         Address
       </label>
       <div class="form-floating">
-        <textarea class="form-control"></textarea>
-        <label>Enter your Address</label>
+        <textarea class="form-control" id="address-input"></textarea>
       </div>
       <div class="mb-3 mt-3">
-        <label for="formFile" class="form-label">Upload your Resume</label>
-        <input class="form-control" type="file" id="formFile">
+        <label for="resume-input" class="form-label">Upload your Resume</label>
+        <br>
+        <input type="file" id="resume-input"  accept=".pdf,.doc,.docx"  required>
       </div>
       <div class="form-check mb-3">
-        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+        <input class="form-check-input" type="checkbox" value="" id="agree-checkbox">
         <label class="form-check-label" for="checkDefault">
           I agree to the Terms and Conditions
         </label>
@@ -89,11 +93,93 @@
       </div>
   </div>
   </form>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script>
+  let submit_button = document.getElementById("submit-button");
+  submit_button.addEventListener('click', validateInput);
+
+  function validateInput(event) {
+    event.preventDefault();
+   const email_input = document.getElementById("email-input").value;
+  const username = document.getElementById("username-input").value;
+  const name_input = document.getElementById("name-input").value;
+  const password_input = document.getElementById("password-input").value;
+  const confirm_password = document.getElementById("confirm-password").value;
+  const age = parseInt(document.getElementById("age-input").value);
+  const gender = document.querySelector('input[name="gender"]:checked');
+  const phone_number_input = document.getElementById("phone-number-input").value;
+  const address_input = document.getElementById("address-input").value;
+  const checkbox_input = document.getElementById("agree-checkbox").checked;
+  const resume = document.getElementById("resume-input").files[0];
+
+    if (!/^[A-Za-z\s]{3,}$/.test(name_input)) {
+      alert("Name must have at least 3 characters (No digits or special characters included).");
+      return;
+    }
+    else if (!/^[A-Za-z0-9_]{5,15}$/.test(username)) {
+      alert("Username must have 5–15 characters; letters, numbers, underscores only.");
+      return;  
+      }
+    else if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&+=!]).{6,}$/.test(password_input)) {
+      alert("Password must include uppercase, lowercase, digit, and special character (min 6 chars).");
+      return;
+    }
+    else if (password_input !== confirm_password) {
+      alert("Password and Confirm Password must match exactly.");
+      return;
+    }
+    else if (isNaN(age) || age < 18 || age > 60) {
+      alert("Age must be a number between 18 and 60.");
+      return;
+    }
+    else if (!/^[\w.-]+@[\w.-]+\.\w+$/.test(email_input)) {
+      alert("Enter a valid email address (e.g., user@example.com).");
+      return;
+    }
+    else if (!/^\d{10}$/.test(phone_number_input)) {
+      alert("Phone number must be exactly 10 digits.");
+      return;
+    }
+    else if (!gender) {
+      alert("Please select your gender (Male / Female / Other).");
+      return;
+    }
+    else if (address_input.trim().length < 10) {
+      alert("Address must have at least 10 characters.");
+      return;
+    }
+    else if (!resume) {
+      alert("Please upload your resume (.pdf, .doc, or .docx).");
+      return;
+    }
+    else if (!/\.(pdf|doc|docx)$/i.test(resume.name)) {
+      alert("Invalid file format! Only .pdf, .doc, or .docx files are allowed.");
+      return;
+    }
+    else if (resume.size > 2 * 1024 * 1024) {
+      alert("File too large! Resume must be under 2MB.");
+      return;
+    }
+    else if (!checkbox_input) {
+      alert("You must agree to the terms and conditions before submitting.");
+      return;
+    }
+    else {
+      alert("Form submitted successfully!");
+      return;
+    }
+
+
+
+
+
+
+  }
+
 
 </script>
+
+</body>
 
 </html>
