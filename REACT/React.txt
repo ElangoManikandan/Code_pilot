@@ -85,6 +85,26 @@ HOOKS:
 
 PROPS IN React:
 
+    -Properties 
+    -It is a Object
     -
-        
+
+Other Hooks in React
+    useContext:
+    Pass Props in All Child and Parent
+
+    useRef:
+    for Refer DOM or persisting values
+
+useReducer:
+    (/:For Complex State logic:)
+    Alternative for useState for more Complex State
+
+useMemo:
+    Memoizes expensive Calculations (cache memory)
+
+useCallback (For Memoizing Functions):
+    Prevents Functions From being recreated on every Render.
+
+    Useful when passing Function as Props
 

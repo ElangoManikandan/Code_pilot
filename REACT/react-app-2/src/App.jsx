@@ -1,5 +1,6 @@
 import { useState,useEffect } from 'react'
 import reactLogo from './assets/react.svg'
+import Home from './pages/Home' 
 import viteLogo from '/vite.svg'
 import Header from './pages/Header'
 import Footer from './pages/Footer'
@@ -29,11 +30,10 @@ function App() {
    useEffect(()=>{
         console.log("Content")
 })
-    
-  
   return (
     <>
     <Header/>
+    <Home/>
       <h1>Mobile Phones</h1>
       {login ? <h1>Welcome, {user}</h1>:<h1>Login first</h1>}
       <p>Count is {count} </p>
