@@ -1,52 +1,30 @@
-import { useState,useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import Home from './pages/Home' 
-import viteLogo from '/vite.svg'
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+// import App1 from './App1'
 import Header from './pages/Header'
-import Footer from './pages/Footer'
-import Content from './pages/Content'
-import './App.css'
+import Home from './section/Home'
+import About from './section/About'
+import Contact from './section/Contact'
+import Computers from './section/Computers'
+import Smartphones from './section/Smartphones'
+import Gadgets from './section/Gadgets'
 
-function App() {
-  
-  let [count, changeCount] = useState(0)
-  let login=false;
-  let user="Elango";
-  const increase=()=>{
-    count=count+1;
-    changeCount(count);
-    console.log(count);
-  }
-
-  const decrease=()=>{
-    count=count-1;
-    changeCount(count);
-  }
-  const reset=
-  ()=>{
-    count=0;
-    changeCount(count);
-  }
-   useEffect(()=>{
-        console.log("Content")
-})
-  return (
-    <>
-    <Header/>
-    <Home/>
-      <h1>Mobile Phones</h1>
-      {login ? <h1>Welcome, {user}</h1>:<h1>Login first</h1>}
-      <p>Count is {count} </p>
-      <div className='btn'><img src="https://th.bing.com/th/id/OIP.-sT6bg6itEKdkYw58KpvUwHaHa?w=199&h=199&c=7&r=0&o=7&cb=ucfimgc2&dpr=1.3&pid=1.7&rm=3" alt="" /></div>
-      <div className='btn'>
-        <button onClick={increase}>Increase count</button>
-        <button onClick={decrease}>Decrease count</button>
-        <button onClick={reset}>Reset count</button>
-      </div>
-      <Content/>
-      <Footer/>
-    </>
-  )
+function App(){
+    return (
+        <>
+        <BrowserRouter>
+        <Header/>
+        <Routes>
+            {/* <Header/> */}
+            {/* <Route path="/" element={<App1/>}/> */}
+            <Route path="/home" element={<Home/>}/>
+            <Route path="/computers" element={<Computers/>}/>
+            <Route path="/smartphones" element={<Smartphones/>}/>
+            <Route path="/gadgets" element={<Gadgets/>}/>
+            <Route path="/about" element={<About/>}/>
+            <Route path="/contact" element={<Contact/>}/>
+            </Routes>
+        </BrowserRouter>
+        </>
+    )
 }
-
-export default App;
+export default App

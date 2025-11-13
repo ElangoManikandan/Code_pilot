@@ -1,0 +1,47 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.vivo-images{
+    
+    display: flex;
+    margin:20px 0;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
+.vivo-images img,.oppo-images img,.mouse-images img,.charger-images img{
+    width: 350px;
+    height: 350px;
+    margin:20px 60px;
+    
+}
+h1,h2,h3{
+    text-align: center;
+}
+.oppo-images,.charger-images,.mouse-images{ 
+    display: flex;
+    justify-content: center;
+     margin:0px 20px;
+     flex-wrap: wrap;
+}
+.trending-poster{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+     margin:0px 20px;
+
+}
+.trending-poster img{
+    width:400px;
+    height:400px;  
+     margin:0px 20px ;
+     border-radius: 20%;
+     box-shadow: 5px 5px 5px lightskyblue ;
+     transition: all .2s linear;
+}
+.trending-poster img:hover{
+    transform: translateY(-5px);
+}
+.offer-image img{
+    
+}
