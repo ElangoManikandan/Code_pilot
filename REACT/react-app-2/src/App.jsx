@@ -16,13 +16,15 @@ function App(){
         <Routes>
             {/* <Header/> */}
             {/* <Route path="/" element={<App1/>}/> */}
-            <Route path="/home" element={<Home/>}/>
+            
+            <Route path="/" element={<Home/>}/>
             <Route path="/computers" element={<Computers/>}/>
             <Route path="/smartphones" element={<Smartphones/>}/>
             <Route path="/gadgets" element={<Gadgets/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/contact" element={<Contact/>}/>
             </Routes>
+            
         </BrowserRouter>
         </>
     )

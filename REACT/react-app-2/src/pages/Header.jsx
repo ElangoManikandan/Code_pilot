@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function Header(){
     return <>
     <div className='nav'>
-        <Link to="/home" style={{textDecoration:'none',fontSize:"20px"}}>Home</Link>
+        <Link to="/" style={{textDecoration:'none',fontSize:"20px"}}>Home</Link>
         <Link to="/computers" style={{textDecoration:'none' ,fontSize:"20px"}} >Computers</Link>
         <Link to="/smartphones" style={{textDecoration:'none' ,fontSize:"20px"}} >SmartPhones</Link>
         <Link to="/gadgets"  style={{textDecoration:'none' ,fontSize:"20px"}}>Gadgets</Link>
