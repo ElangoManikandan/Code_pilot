@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react";
 import Product from './Product'
-function Cart() {
+import CartItem from "./CartItem";
+function Cart(props) {
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
@@ -18,7 +19,7 @@ function Cart() {
     <div className="products">
       {
         cart.map((product,index)=>{
-           return <Product
+           return <CartItem
           key={product.id}
           name={product.name} 
             image={product.image} 

@@ -1,7 +1,10 @@
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
     font-size: 20px;
+    height:100px;
+    width: 100%;
     /* color:#1A1A1A; */
     background-color: #B9BBB4;
 }
