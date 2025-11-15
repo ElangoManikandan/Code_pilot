@@ -1,0 +1,12 @@
+.home-div{
+    margin:40px;
+    font-size: 18px;
+}
+.home-div span{
+    color:rgb(180, 120, 0);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+a{
+    color: black;
+    text-decoration: none;
+}

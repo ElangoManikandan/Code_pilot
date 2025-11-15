@@ -1,0 +1,8 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    /* color:#1A1A1A; */
+    background-color: #B9BBB4;
+}
+
