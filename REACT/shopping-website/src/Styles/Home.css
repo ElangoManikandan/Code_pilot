@@ -1,13 +1,15 @@
-.home-div{
-    margin:40px;
+.home-div {
+    margin: 40px;
     font-size: 18px;
     text-align: center;
 }
-.home-div span{
-    color:rgb(180, 120, 0);
-    font-family:Georgia, 'Times New Roman', Times, serif;
+
+.home-div span {
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-a{
+
+a {
     color: black;
     text-decoration: none;
 }

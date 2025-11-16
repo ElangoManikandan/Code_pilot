@@ -6,7 +6,7 @@ function CartItem(props) {
         <img src={props.image} alt="" />
         <p>{props.description}</p>
         <p><b>Price:</b>{props.price}</p>
-    </div>
+     </div>
   )
 }
 

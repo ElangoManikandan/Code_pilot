@@ -1,8 +1,7 @@
 import '../Styles/Product.css'
 
 function Product(props) {
-
-  function addToCart(){
+   function addToCart(){
 
     let cart=localStorage.getItem("cart");
     console.log(cart);

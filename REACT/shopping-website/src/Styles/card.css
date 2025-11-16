@@ -1,7 +1,7 @@
-.product-card-div img{
+.top-deals-card-div img{
 width: 100px;height: 100px;
 }
-.product-card-div{
+.top-deals-card-div{
     width: 21.2%;
     height: fit-content;
     margin: 10px;
@@ -13,7 +13,7 @@ width: 100px;height: 100px;
     /* justify-items: center; */
      /* flex-direction: column;   */
 }
-.product-card-div p{
+.top-deals-card-div p{
     padding: 10px;
     overflow: hidden; 
     text-overflow: ellipsis;  
@@ -21,11 +21,11 @@ width: 100px;height: 100px;
     margin-bottom: 0;
 
 }
-.product-card-div:hover{
+.top-deals-card-div:hover{
     border: 1px solid black;
 }
 
-.product-card-div button{
+.top-deals-card-div button{
     padding:10px;
     border:1px solid black;
     box-shadow: 2px 2px 5px black;
@@ -34,7 +34,16 @@ width: 100px;height: 100px;
     background-color: rgb(208, 152, 145);
     color:black;
 }
-.product-card-div button:hover{
+.top-deals-card-div button:hover{
     background-color: white;
     color:black;
+}
+.top-deals-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.top-deals-card-div h1{
+    font-size: 20px;
+    margin-bottom: 0;
 }

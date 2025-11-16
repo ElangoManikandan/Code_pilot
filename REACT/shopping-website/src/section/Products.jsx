@@ -4,9 +4,11 @@ import '../Styles/Products.css'
 import { useState } from "react"
 function Products() {
   const[products,setProducts]=useState([])
+  
   fetch("https://fakestoreapi.com/products")
   .then(response=>response.json())
   .then(data=> setProducts(data))
+
   return (
     <>
     <h2>Products</h2>
